@@ -1,0 +1,484 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header{
+  background-image: url(../images/adventure-four.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  padding: 20px 7%;
+}
+
+.header .logo{
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.header .navbar ul  {
+  list-style: none;
+}
+
+.header .navbar ul li{
+  position: relative;
+  float: left;
+}
+
+.header .navbar ul li a{
+  font-size: 20px;
+  padding: 20px;
+  display: block;
+
+}
+
+.header .navbar ul li a:hover{
+  background: #333;
+  color: #ffffff;
+}
+
+.header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  display: none;
+}
+
+.header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.header .navbar ul li:hover ul{
+  display: initial;
+}
+
+#menu-bar{
+  display: none;
+}
+
+.header label{
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar ul a::after{
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.navbar ul a:hover::after{
+  width: 100%;
+}
+
+.navbar ul a:hover{
+  color: #ff3c78;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+/*************  Header  Headings   *********/
+
+ .headings {
+  width: 100%;
+  text-align: center;
+  margin-top: 350px;
+ }
+
+ .main-heading{
+   display: inline-block;
+   background: #fbe8c84d;
+   border-radius: 2rem;
+   padding-bottom: 20px;
+ }
+
+ .h1-heading-text{
+   color: #061e5c;
+   letter-spacing: 1px;
+   text-align: center;
+ }
+
+/* ***************** View section     ****** */
+
+.explore-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+.about-explore {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.explore-info{
+  width: 60%;
+}
+
+.h5-span{
+  font-size: 16px;
+  border-bottom: 2px solid #ff3c78;
+  padding-bottom: 5px;
+}
+
+h5, .heading-five-text{
+  display: inline-block;
+  margin: 25px 0;
+}
+
+.heading-five-text{
+  font-size: 28px;
+}
+
+.discover{
+  text-align: center;
+}
+
+.discover-title{
+  color: #303133;
+  text-align: center;
+  border-bottom: 2px solid #ff3c78;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.images-section{
+  background-color: #E9F8F9;
+}
+
+.section-heading-image{
+  margin: 0 50px 50px;
+}
+
+.view-span{
+  margin-left: 10px;
+}
+
+.image-heading{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.conatiner-content{
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.content-info{
+  margin: 10px 0;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+.container-img{
+  width: 440px;
+  height: 300px;
+}
+
+.container-text{
+  display: inline-block;
+  width: 440px;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.explore-li-links a{
+  color: #0151c1;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.explore-li-links a:hover{
+  color: #ff3c78;
+}
+
+.explore-li-links {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+/* ***************   Travel Section *********/
+
+.travel-section{
+  display: contents;
+  text-align: center;
+  justify-content: center;
+  height: 1000px;
+  width: 900px;;
+}
+
+.heading-travel {
+  color: #061e5c;
+  margin-top: 40px;
+  line-height: 2;
+}
+
+.big-heading-travel{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.describe-travel{
+  color: #888;
+}
+
+.active {
+  color: #ff416c;
+  border-bottom: 1px solid #ff416c;
+}
+
+.travel-links {
+  margin-top: 30px;
+}
+
+.travel-link{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #061e5c;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 20px;
+  letter-spacing: 0.5px;
+}
+
+.travel-link:hover{
+  color: #ff416c;
+  border-bottom: 1px solid;
+  transition: 0.1s;
+}
+
+.travel-img-div{
+  display: inline-block;
+  padding: 1em 0;
+  width: 30%;
+}
+.travel-img {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* **************    explore  ******   */
+
+.discover-images-container{
+  margin: 100px 0;
+}
+
+
+.travel-img .explore-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.travel-img:hover .explore-overlay{
+  opacity: 1;
+}
+
+.explore-images{
+  width: 100%;
+  height: 300px;
+}
+
+.explore-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.travel-img:hover .explore-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.explore-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+/* ********************   footer   ********** */
+
+footer{
+  position: relative;
+}
+
+.footer{
+  height: 300px;
+  background: #b4e4ffb5;
+  padding: 110px 0px;
+  text-align: center;
+}
+
+.footer .row{
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #061e5c;
+  font-size: 0.8em;
+}
+
+.footer .row a{
+  text-decoration: none;
+  color: #061e5c;
+  transition: 0.5s;
+}
+
+.footer .row a:hover{
+  color: #ff3c78;
+}
+
+.footer .row ul{
+  width: 100%;
+}
+
+.footer .row ul li{
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i{
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+
+
+
+
+
+/* *************     Media Query  Start    ******** */
+
+@media (max-width:991px) {
+
+  header{
+    height: 80pc;
+  }
+
+  .header{
+    position: relative;
+    padding: 70px;
+  }
+
+  .header label{
+    display: initial;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000;
+    display: none;
+    text-align: center;
+    background: ##E9F8F9;
+  }
+
+  .header .navbar ul li{
+    width: 100%;
+    background: #ead1bb;
+  }
+
+  .header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+  }
+
+  .header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-bar:checked ~ .navbar{
+    display: initial;
+  }
+
+  .explore-content {
+    height: 45vh;
+  }
+
+  .travel-img-div{
+    width: 45%;
+  }
+
+}
+
+
+@media (max-width:600px) {
+
+  .headings{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+  }
+
+
+}
+
+@media (max-width:1500px) {
+
+
+}
+
+/* *************     Media Query  End    ******** */
